@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style1.css">
+
+</head>
+<body>
+<div id="container">
+<button class="C-button" style="background-color: violet"></button>
+<button class="C-button" style="background-color: yellow"></button>
+<button class="C-button" style="background-color: lawngreen"></button>
+<button class="C-button" style="background-color: orangered"></button>
+<button class="C-button" style="background-color: dodgerblue"></button>
+<button class="C-button" style="background-color: darkkhaki"></button>
+</div>
+<script>
+    let button1 = document.getElementsByClassName('C-button');
+    for (let i = 0; i <button1.length ; i++) {
+        button1[i].addEventListener('click', function(){
+            document.body.style.backgroundColor = button1[i].style.backgroundColor;
+
+        })
+
+    }
+</script>
+</body>
+</html>

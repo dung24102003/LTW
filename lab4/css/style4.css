@@ -1,0 +1,15 @@
+#container{
+    margin-left: 300px;
+
+}
+#text-field{
+    display: block;
+    margin-top:20px;
+
+}
+#C-button {
+    display: block;
+    margin-top:20px;
+    cursor: pointer;
+
+}

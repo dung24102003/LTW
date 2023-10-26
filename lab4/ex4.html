@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="css/style4.css">
+</head>
+<body>
+<div id="container">
+  <textarea name="" id="text-area" cols="50" rows="5"></textarea>
+  <input type="text" name="" id="text-field">
+  <button id =C-button> Nhấn</button>
+  <p id="answer">Kết quả</p>
+
+
+</div>
+<script>
+    var button = document.getElementById('C-button');
+    check.addEventListener('click', function () {
+        var textField = document.getElementById('text-field').value;
+        var textArea = document.getElementById('text-area').value;
+        var times =  textArea.split(textField).length - 1;
+        var ketQua =document.getElementById(answer);
+
+        ketQua.innerText('So lan xuat hien la' + times);
+
+
+    } )
+</script>
+</body>
+</html>

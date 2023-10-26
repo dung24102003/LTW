@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="hello">
+    <p id="hi"> Xin Chào</p>
+</div>
+
+<script>
+    var list =['xin chào' , 'hi' , 'hello' , 'good morning'];
+
+    var ranDom = list[Math.floor(Math.random() * list.length)];
+    document.getElementById('hi').textContent = ranDom;
+
+</script>
+</body>
+</html>

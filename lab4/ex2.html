@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+<div id="container">
+  <div class="input">
+    <input type="text" name="" placeholder="Nhập a" id="a">
+    <span>x^2 + </span>
+  </div>
+  <div class="input">
+    <input type="text" name="" placeholder="Nhập b" id="b">
+    <span>x + </span>
+
+  </div>
+  <div class="input">
+    <input type="text" name="" placeholder="Nhập c" id="c">
+    <span>= 0</span>
+
+  </div>
+  <button id="C-button"> Giải </button>
+  <p id="answer">Kết quả</p>
+</div>
+<script>
+    var x1 =document.getElementById('a');
+    var x2 =document.getElementById('b');
+    var x3 =document.getElementById('c');
+    var button=document.getElementById('C-button');
+    var ketQua = document.getElementById('answer');
+
+    button.addEventListener('click' , function(){
+      var a=x1.value;
+      var b=x2.value;
+      var c=x3.value;
+
+      var delta = b*b -4 *a*c;
+      if (a=0){
+        if (b=0){
+          if (c=0){
+            ketQua.innerText='Phương trình có vô số nghiệm';
+          } KetQua.innerText='Phương trình vô nghiệm';
+        }
+        else {
+          var x4=-c/b;
+          ketQua.innerText='x4';
+        }
+      }
+      else{
+        if (delta < 0) {
+          ketQua.innerText = 'Phương trình vô nghiệm.';
+        } else if (delta == 0) {
+          var x4 = -b / (2 * a);
+          ketQua.innerText = 'Phương trình có nghiệm kép: x5 = x6 = ' + x4;
+        } else {
+          var x5 = (-b + Math.sqrt(delta)) / (2 * a);
+          var x6 = (-b - Math.sqrt(delta)) / (2 * a);
+          ketQua.innerText = 'Phương trình có 2 nghiệm x1 = ' + x5 + ', x6 = ' + x6
+      }
+    }})
+</script>
+</body>
+</html>
